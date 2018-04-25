@@ -5,7 +5,7 @@ import openSocket from 'socket.io-client';
 import { Button } from 'react-materialize';
 import './App.css';
 
-const  socket = openSocket('http://localhost:5000');
+const socket = openSocket('http://localhost:5000');
 
 
 class App extends Component {
