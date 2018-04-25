@@ -1,0 +1,2023 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlockListStream when displayLastTen is false tests to see if the AppComponent is rendering the BlockListStream Component 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <UNDEFINED>
+          <div>
+            <h1
+              className="text-white"
+            >
+              Recent EOS Blocks
+            </h1>
+          </div>
+          <Button
+            className="blockListBtns"
+            node="button"
+            onClick={[Function]}
+          >
+            Load Last Ten
+          </Button>
+        </UNDEFINED>,
+        null,
+        <BlockListStream
+          recentBlocks={
+            Object {
+              "13083": Array [
+                "{
+  \\"previous\\": \\"0000331a9bb24d928eff23c0edbe13a503248b15f49f0d3c2f599af631165144\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:12.500\\",
+  \\"transaction_mroot\\": \\"5fd0f9cc2bf6f303bfa7001179dc699fb706f4e8c12faa6b8b431e688de2d3b3\\",
+  \\"action_mroot\\": \\"b175559d1f90194cf66c3fcfedbe07bf2e2c3cb9fd3cbebb923b28dbd78471cd\\",
+  \\"block_mroot\\": \\"2030c5903436f0f15c16522dae7ec6924bdf966520290c041a82fc39dac75ead\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKfKyiywigw3mrHGskSw9e6LWkArC2FxBivbHoeiW75Ddd5dgjQVfQ174bULwSsscKSLdEDDjjawBuRCC37RzX4VqoYhM15\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"93e2dac43d33d060dc50ca6408efd1f288e14d0e4debdca7ca85329bda85175c\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000331bf8c63ea7cea3621b135617e19c434eb642e1e8b129d178c9c10e6359\\",
+  \\"block_num\\": 13083,
+  \\"ref_block_prefix\\": 459449294
+}",
+              ],
+              "13084": Array [
+                "{
+  \\"previous\\": \\"0000331bf8c63ea7cea3621b135617e19c434eb642e1e8b129d178c9c10e6359\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:13.000\\",
+  \\"transaction_mroot\\": \\"a6a36c7f13da10e2f4e2f1c5172c9c0aac7a1002255c531e1eafab675df0c2c4\\",
+  \\"action_mroot\\": \\"f74d72952f538ee5d1da6f11da297adc9bd024c2d42f6abb87f061ca29b20516\\",
+  \\"block_mroot\\": \\"536c27e0bc030587ec639be97cd7de0de7c75c4ee4c31ab3f62c5f1b21fbe885\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKjaJH1Dr32kANKuNYKZbF7NqGuhhKjebyzy1u25WNRVbJMKkGDQaZL1Wyz2e575EabQLyjUoFbYbgHtBXThNUMc8gx8uwr\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"2a177b867e3b4c286851e698975c41c33f6262cd9c309441590dbf017709b23c\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000331c56fe87a32b1c6fea30b1b7091090db33cc9a4d4d6bd0421f8902a14d\\",
+  \\"block_num\\": 13084,
+  \\"ref_block_prefix\\": 3933150251
+}",
+              ],
+              "13085": Array [
+                "{
+  \\"previous\\": \\"0000331c56fe87a32b1c6fea30b1b7091090db33cc9a4d4d6bd0421f8902a14d\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:13.500\\",
+  \\"transaction_mroot\\": \\"28562ac2f3a713a9957866d72d4d8dfdb1fb9823f2705a61759f7d284acf32b2\\",
+  \\"action_mroot\\": \\"c22de8473b8e1ade3def896d7d62edff517909de4faad9ecc20cda1c75926b35\\",
+  \\"block_mroot\\": \\"1bb86e086490876f46c00b0917b745a0210d89a60edc1cdf5986836f5662af4b\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKXJAfJArhWRMzmo9srKSzt8QeAzXKkadXEYTcJkENUwje3PVGj4RyoKatJWxPcQiNgks4py2gPwptMh6uA3XN4NxY94j5U\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"249e3d00ea1c8683d8b0b3eddc418c02b83163ac7cb357ee1f259a54f71b6562\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000331d2df849d09f0ca0b5074e0f1bc7b57835634250b9a116d1349044d05c\\",
+  \\"block_num\\": 13085,
+  \\"ref_block_prefix\\": 3047165087
+}",
+              ],
+              "13086": Array [
+                "{
+  \\"previous\\": \\"0000331d2df849d09f0ca0b5074e0f1bc7b57835634250b9a116d1349044d05c\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:14.000\\",
+  \\"transaction_mroot\\": \\"33fa8d5acaea05fb1e5281c8ad483f55270c1fa0b1676093e7488875e0247999\\",
+  \\"action_mroot\\": \\"937f4f8bdfb87f2a981dd61de4649d99fdf952382600e6fe41e87a0c5c8bfc5f\\",
+  \\"block_mroot\\": \\"e085b9c913556bd87b30bcb161f03edba8cd200be0021906c38680e43062712f\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSK2qPbwLdaQ7N1HKVZXTePgmandFt1zbabQegQ9Z6gNprmQmyXX3zvJdh4dceryhufTkyw1TXV9YTiJZnZKRvGriBCAdrfN\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"746e8d15bd76fe0c38cd3c0f06e84420afb619b6c164a56bb122730ae37dd007\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000331efcd3bc6c437d702f05e3fb2d1fcae0713a36decb99574d9e7c4d3886\\",
+  \\"block_num\\": 13086,
+  \\"ref_block_prefix\\": 795901251
+}",
+              ],
+              "13087": Array [
+                "{
+  \\"previous\\": \\"0000331efcd3bc6c437d702f05e3fb2d1fcae0713a36decb99574d9e7c4d3886\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:14.500\\",
+  \\"transaction_mroot\\": \\"bb86367709880ac8749d0d18f4cb00b5695bf2f876ff71f72e85d951ce7f89ef\\",
+  \\"action_mroot\\": \\"ec42905a23b445eea9f00982776be1ee74b8a1a23d8f251ec276cb1053bc4714\\",
+  \\"block_mroot\\": \\"2074fefa9a0340eca9d4c498ed7bba744dcb26f7cdfe0396de6db21e66fd1120\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSK6FT23s21vUXKHT6WSySYhJmTtVQRFqw8ZKHvtp8Df5wyGZqKqHfV6jMWmpsyA8Za1zBwTk8abW49aoA2u2GhVCGmHZbjN\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"039740170799fac8e98b7bdb721c1eef876c68c0703566df8c0d6ec68d42dcd3\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000331fc0f2cf2ef211e4fbb1d1e1e733d738de34ee91dbc369fd7f37615214\\",
+  \\"block_num\\": 13087,
+  \\"ref_block_prefix\\": 4226028018
+}",
+              ],
+              "13088": Array [
+                "{
+  \\"previous\\": \\"0000331fc0f2cf2ef211e4fbb1d1e1e733d738de34ee91dbc369fd7f37615214\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:15.000\\",
+  \\"transaction_mroot\\": \\"6925696709d5d1ac594b69b9b1f239507e2d6edad5bb7f93dfd8194f033bda1a\\",
+  \\"action_mroot\\": \\"f8c6b2c5d58d128a665e21beae0c5d55cf5d3363ae54cfc617078d3055c93278\\",
+  \\"block_mroot\\": \\"b8993ddb359d2b1ed42855ac3733b0c0ad7024839088732e4e684345079e9983\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSJyiJkAMZ277ejRTD4TiwxiZ5kLNKfeSxnVYoRotNnFAXFMzRobdokPWzN99rWFG6WtwGu5ZGMx3yy9736DGeanHqoQzMtm\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"d405aff838a4185823e2ad8a2c169e3a776057e6de4482b28bed3cbdb08398bc\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"00003320c5c0496b5d2a2a1f87ce1daf66bb531d58a1b6c545c97cfebd88609c\\",
+  \\"block_num\\": 13088,
+  \\"ref_block_prefix\\": 522857053
+}",
+              ],
+              "13089": Array [
+                "{
+  \\"previous\\": \\"00003320c5c0496b5d2a2a1f87ce1daf66bb531d58a1b6c545c97cfebd88609c\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:15.500\\",
+  \\"transaction_mroot\\": \\"0c3d0844adbbb7067e6c0d15b588ae649f4eac6e5a4f8991462a2dd0bde18a98\\",
+  \\"action_mroot\\": \\"5840d2726a9b5f611b2956e104cd99f8e73441233cea1a97013340ffda6871ec\\",
+  \\"block_mroot\\": \\"1e63e6741f19de0501b703918deedadd596b21eb4f25e66f8a485f20b673a188\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKdvw4hpN46AujwM7YGb55FHopzFG1qU23KnA7ZZ9YgMi3TTizRKRuguD4KAEd7maXvgbPrTnuMnkVC4F4wcUEL5FkqcDwq\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"05a50de5a368b41a4037aa93b7e4e385139e6e65ceec4ff17276b66ed88eb664\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"000033216c84108bf009bd41869870733bc71af852daac02ba911f56df06cd4d\\",
+  \\"block_num\\": 13089,
+  \\"ref_block_prefix\\": 1102907888
+}",
+              ],
+              "13090": Array [
+                "{
+  \\"previous\\": \\"000033216c84108bf009bd41869870733bc71af852daac02ba911f56df06cd4d\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:16.000\\",
+  \\"transaction_mroot\\": \\"16c4dde6468f46674e3ba1d525656e768788ef946dad527bad832445d4c9fb15\\",
+  \\"action_mroot\\": \\"32e35387b1069dc06da0f193ab5c5dd95c49a613413e1413f8aec21da445449a\\",
+  \\"block_mroot\\": \\"db6bad37260e2c6da2e71362f78aeffccadb220bc75d7175e58778f958145320\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKjqg6KqTXLFE199bR8M9Hci1o3fQU7fBmGJXopfT5VYELQurPXNjyoquzWGcCCfooqRycPjytbqu6LR4uRJZnMk8c7Wnem\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"8fc3b169f26e56192c3085b0561f2303e8db0ab323dcce7e0fbfc0a202d75fc5\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000332267affa72638f0cbd58c0088d34ea42d70e6ce5122868ae92e9d19721\\",
+  \\"block_num\\": 13090,
+  \\"ref_block_prefix\\": 3171716963
+}",
+              ],
+              "13091": Array [
+                "{
+  \\"previous\\": \\"0000332267affa72638f0cbd58c0088d34ea42d70e6ce5122868ae92e9d19721\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:16.500\\",
+  \\"transaction_mroot\\": \\"6831a3cb4fbe8e8ca99b1d426a266baf74ef5d16fd034fccb58d2060bbaa1623\\",
+  \\"action_mroot\\": \\"d910cb234b21cd8c299e859a3aef5449cfa50d38403d42a356b1dee87b499b2c\\",
+  \\"block_mroot\\": \\"e33474310fa00efc4c22e9c5ef9985e77153e02a622725308ac0c0cbaac5fa3b\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKfXdyhBcGMKgDXkuhwEZQCcS1R7C63BAjPMhKinZtPbe129PVYA3Gd6EmS9a6v53RCfRcem2a8WvfekDjCoRYnfmu982Si\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"7263ff3833dfed31caee6eef836c053180cd7d74579d8e7a6e3a9b515216bcbd\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"000033238bf95234b1ccce38ed87ef4cab3a1c7e4c47f7ec728663e134d09918\\",
+  \\"block_num\\": 13091,
+  \\"ref_block_prefix\\": 953076913
+}",
+              ],
+              "13092": Array [
+                "{
+  \\"previous\\": \\"000033238bf95234b1ccce38ed87ef4cab3a1c7e4c47f7ec728663e134d09918\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:17.000\\",
+  \\"transaction_mroot\\": \\"c5e924f9f28333bfd728392224c80648cc8fbcdeaa89d644cc52c4945033a1ec\\",
+  \\"action_mroot\\": \\"02126313f88643dda62a7afa4a4330fa32e0aaa9d21360e1b52fbbf73cc35ec7\\",
+  \\"block_mroot\\": \\"a840c06523e7921e0292ef3c90a0129bdebc2459175a2fcccf4794b53532befd\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSK5F3p7qd44KdqDwJWdiHLtYCjeNN8qPcxzkogDkf5pziMgKzYqZhjsEbEW9gzqG52zPVfrCamG8xtURY4skKzkxdyWamr2\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"4a1ad96262a39f4514f71dc3975e8d6201dbefdb688590854b8ed4e4790cabca\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"000033245b7c7b328a49ab9bcd4d9b412bfaba2fbf7fe4e4ecdeae24e2f16b2d\\",
+  \\"block_num\\": 13092,
+  \\"ref_block_prefix\\": 2611693962
+}",
+              ],
+            }
+          }
+        />,
+      ],
+      "className": "App",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <div>
+              <h1
+                className="text-white"
+              >
+                Recent EOS Blocks
+              </h1>
+            </div>,
+            <Button
+              className="blockListBtns"
+              node="button"
+              onClick={[Function]}
+            >
+              Load Last Ten
+            </Button>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <h1
+                className="text-white"
+              >
+                Recent EOS Blocks
+              </h1>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Recent EOS Blocks",
+                "className": "text-white",
+              },
+              "ref": null,
+              "rendered": "Recent EOS Blocks",
+              "type": "h1",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Load Last Ten",
+              "className": "blockListBtns",
+              "node": "button",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Load Last Ten",
+            "type": [Function],
+          },
+        ],
+        "type": Symbol(react.fragment),
+      },
+      null,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "recentBlocks": Object {
+            "13083": Array [
+              "{
+  \\"previous\\": \\"0000331a9bb24d928eff23c0edbe13a503248b15f49f0d3c2f599af631165144\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:12.500\\",
+  \\"transaction_mroot\\": \\"5fd0f9cc2bf6f303bfa7001179dc699fb706f4e8c12faa6b8b431e688de2d3b3\\",
+  \\"action_mroot\\": \\"b175559d1f90194cf66c3fcfedbe07bf2e2c3cb9fd3cbebb923b28dbd78471cd\\",
+  \\"block_mroot\\": \\"2030c5903436f0f15c16522dae7ec6924bdf966520290c041a82fc39dac75ead\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKfKyiywigw3mrHGskSw9e6LWkArC2FxBivbHoeiW75Ddd5dgjQVfQ174bULwSsscKSLdEDDjjawBuRCC37RzX4VqoYhM15\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"93e2dac43d33d060dc50ca6408efd1f288e14d0e4debdca7ca85329bda85175c\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000331bf8c63ea7cea3621b135617e19c434eb642e1e8b129d178c9c10e6359\\",
+  \\"block_num\\": 13083,
+  \\"ref_block_prefix\\": 459449294
+}",
+            ],
+            "13084": Array [
+              "{
+  \\"previous\\": \\"0000331bf8c63ea7cea3621b135617e19c434eb642e1e8b129d178c9c10e6359\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:13.000\\",
+  \\"transaction_mroot\\": \\"a6a36c7f13da10e2f4e2f1c5172c9c0aac7a1002255c531e1eafab675df0c2c4\\",
+  \\"action_mroot\\": \\"f74d72952f538ee5d1da6f11da297adc9bd024c2d42f6abb87f061ca29b20516\\",
+  \\"block_mroot\\": \\"536c27e0bc030587ec639be97cd7de0de7c75c4ee4c31ab3f62c5f1b21fbe885\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKjaJH1Dr32kANKuNYKZbF7NqGuhhKjebyzy1u25WNRVbJMKkGDQaZL1Wyz2e575EabQLyjUoFbYbgHtBXThNUMc8gx8uwr\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"2a177b867e3b4c286851e698975c41c33f6262cd9c309441590dbf017709b23c\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000331c56fe87a32b1c6fea30b1b7091090db33cc9a4d4d6bd0421f8902a14d\\",
+  \\"block_num\\": 13084,
+  \\"ref_block_prefix\\": 3933150251
+}",
+            ],
+            "13085": Array [
+              "{
+  \\"previous\\": \\"0000331c56fe87a32b1c6fea30b1b7091090db33cc9a4d4d6bd0421f8902a14d\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:13.500\\",
+  \\"transaction_mroot\\": \\"28562ac2f3a713a9957866d72d4d8dfdb1fb9823f2705a61759f7d284acf32b2\\",
+  \\"action_mroot\\": \\"c22de8473b8e1ade3def896d7d62edff517909de4faad9ecc20cda1c75926b35\\",
+  \\"block_mroot\\": \\"1bb86e086490876f46c00b0917b745a0210d89a60edc1cdf5986836f5662af4b\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKXJAfJArhWRMzmo9srKSzt8QeAzXKkadXEYTcJkENUwje3PVGj4RyoKatJWxPcQiNgks4py2gPwptMh6uA3XN4NxY94j5U\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"249e3d00ea1c8683d8b0b3eddc418c02b83163ac7cb357ee1f259a54f71b6562\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000331d2df849d09f0ca0b5074e0f1bc7b57835634250b9a116d1349044d05c\\",
+  \\"block_num\\": 13085,
+  \\"ref_block_prefix\\": 3047165087
+}",
+            ],
+            "13086": Array [
+              "{
+  \\"previous\\": \\"0000331d2df849d09f0ca0b5074e0f1bc7b57835634250b9a116d1349044d05c\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:14.000\\",
+  \\"transaction_mroot\\": \\"33fa8d5acaea05fb1e5281c8ad483f55270c1fa0b1676093e7488875e0247999\\",
+  \\"action_mroot\\": \\"937f4f8bdfb87f2a981dd61de4649d99fdf952382600e6fe41e87a0c5c8bfc5f\\",
+  \\"block_mroot\\": \\"e085b9c913556bd87b30bcb161f03edba8cd200be0021906c38680e43062712f\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSK2qPbwLdaQ7N1HKVZXTePgmandFt1zbabQegQ9Z6gNprmQmyXX3zvJdh4dceryhufTkyw1TXV9YTiJZnZKRvGriBCAdrfN\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"746e8d15bd76fe0c38cd3c0f06e84420afb619b6c164a56bb122730ae37dd007\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000331efcd3bc6c437d702f05e3fb2d1fcae0713a36decb99574d9e7c4d3886\\",
+  \\"block_num\\": 13086,
+  \\"ref_block_prefix\\": 795901251
+}",
+            ],
+            "13087": Array [
+              "{
+  \\"previous\\": \\"0000331efcd3bc6c437d702f05e3fb2d1fcae0713a36decb99574d9e7c4d3886\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:14.500\\",
+  \\"transaction_mroot\\": \\"bb86367709880ac8749d0d18f4cb00b5695bf2f876ff71f72e85d951ce7f89ef\\",
+  \\"action_mroot\\": \\"ec42905a23b445eea9f00982776be1ee74b8a1a23d8f251ec276cb1053bc4714\\",
+  \\"block_mroot\\": \\"2074fefa9a0340eca9d4c498ed7bba744dcb26f7cdfe0396de6db21e66fd1120\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSK6FT23s21vUXKHT6WSySYhJmTtVQRFqw8ZKHvtp8Df5wyGZqKqHfV6jMWmpsyA8Za1zBwTk8abW49aoA2u2GhVCGmHZbjN\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"039740170799fac8e98b7bdb721c1eef876c68c0703566df8c0d6ec68d42dcd3\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000331fc0f2cf2ef211e4fbb1d1e1e733d738de34ee91dbc369fd7f37615214\\",
+  \\"block_num\\": 13087,
+  \\"ref_block_prefix\\": 4226028018
+}",
+            ],
+            "13088": Array [
+              "{
+  \\"previous\\": \\"0000331fc0f2cf2ef211e4fbb1d1e1e733d738de34ee91dbc369fd7f37615214\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:15.000\\",
+  \\"transaction_mroot\\": \\"6925696709d5d1ac594b69b9b1f239507e2d6edad5bb7f93dfd8194f033bda1a\\",
+  \\"action_mroot\\": \\"f8c6b2c5d58d128a665e21beae0c5d55cf5d3363ae54cfc617078d3055c93278\\",
+  \\"block_mroot\\": \\"b8993ddb359d2b1ed42855ac3733b0c0ad7024839088732e4e684345079e9983\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSJyiJkAMZ277ejRTD4TiwxiZ5kLNKfeSxnVYoRotNnFAXFMzRobdokPWzN99rWFG6WtwGu5ZGMx3yy9736DGeanHqoQzMtm\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"d405aff838a4185823e2ad8a2c169e3a776057e6de4482b28bed3cbdb08398bc\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"00003320c5c0496b5d2a2a1f87ce1daf66bb531d58a1b6c545c97cfebd88609c\\",
+  \\"block_num\\": 13088,
+  \\"ref_block_prefix\\": 522857053
+}",
+            ],
+            "13089": Array [
+              "{
+  \\"previous\\": \\"00003320c5c0496b5d2a2a1f87ce1daf66bb531d58a1b6c545c97cfebd88609c\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:15.500\\",
+  \\"transaction_mroot\\": \\"0c3d0844adbbb7067e6c0d15b588ae649f4eac6e5a4f8991462a2dd0bde18a98\\",
+  \\"action_mroot\\": \\"5840d2726a9b5f611b2956e104cd99f8e73441233cea1a97013340ffda6871ec\\",
+  \\"block_mroot\\": \\"1e63e6741f19de0501b703918deedadd596b21eb4f25e66f8a485f20b673a188\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKdvw4hpN46AujwM7YGb55FHopzFG1qU23KnA7ZZ9YgMi3TTizRKRuguD4KAEd7maXvgbPrTnuMnkVC4F4wcUEL5FkqcDwq\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"05a50de5a368b41a4037aa93b7e4e385139e6e65ceec4ff17276b66ed88eb664\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"000033216c84108bf009bd41869870733bc71af852daac02ba911f56df06cd4d\\",
+  \\"block_num\\": 13089,
+  \\"ref_block_prefix\\": 1102907888
+}",
+            ],
+            "13090": Array [
+              "{
+  \\"previous\\": \\"000033216c84108bf009bd41869870733bc71af852daac02ba911f56df06cd4d\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:16.000\\",
+  \\"transaction_mroot\\": \\"16c4dde6468f46674e3ba1d525656e768788ef946dad527bad832445d4c9fb15\\",
+  \\"action_mroot\\": \\"32e35387b1069dc06da0f193ab5c5dd95c49a613413e1413f8aec21da445449a\\",
+  \\"block_mroot\\": \\"db6bad37260e2c6da2e71362f78aeffccadb220bc75d7175e58778f958145320\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKjqg6KqTXLFE199bR8M9Hci1o3fQU7fBmGJXopfT5VYELQurPXNjyoquzWGcCCfooqRycPjytbqu6LR4uRJZnMk8c7Wnem\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"8fc3b169f26e56192c3085b0561f2303e8db0ab323dcce7e0fbfc0a202d75fc5\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000332267affa72638f0cbd58c0088d34ea42d70e6ce5122868ae92e9d19721\\",
+  \\"block_num\\": 13090,
+  \\"ref_block_prefix\\": 3171716963
+}",
+            ],
+            "13091": Array [
+              "{
+  \\"previous\\": \\"0000332267affa72638f0cbd58c0088d34ea42d70e6ce5122868ae92e9d19721\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:16.500\\",
+  \\"transaction_mroot\\": \\"6831a3cb4fbe8e8ca99b1d426a266baf74ef5d16fd034fccb58d2060bbaa1623\\",
+  \\"action_mroot\\": \\"d910cb234b21cd8c299e859a3aef5449cfa50d38403d42a356b1dee87b499b2c\\",
+  \\"block_mroot\\": \\"e33474310fa00efc4c22e9c5ef9985e77153e02a622725308ac0c0cbaac5fa3b\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKfXdyhBcGMKgDXkuhwEZQCcS1R7C63BAjPMhKinZtPbe129PVYA3Gd6EmS9a6v53RCfRcem2a8WvfekDjCoRYnfmu982Si\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"7263ff3833dfed31caee6eef836c053180cd7d74579d8e7a6e3a9b515216bcbd\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"000033238bf95234b1ccce38ed87ef4cab3a1c7e4c47f7ec728663e134d09918\\",
+  \\"block_num\\": 13091,
+  \\"ref_block_prefix\\": 953076913
+}",
+            ],
+            "13092": Array [
+              "{
+  \\"previous\\": \\"000033238bf95234b1ccce38ed87ef4cab3a1c7e4c47f7ec728663e134d09918\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:17.000\\",
+  \\"transaction_mroot\\": \\"c5e924f9f28333bfd728392224c80648cc8fbcdeaa89d644cc52c4945033a1ec\\",
+  \\"action_mroot\\": \\"02126313f88643dda62a7afa4a4330fa32e0aaa9d21360e1b52fbbf73cc35ec7\\",
+  \\"block_mroot\\": \\"a840c06523e7921e0292ef3c90a0129bdebc2459175a2fcccf4794b53532befd\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSK5F3p7qd44KdqDwJWdiHLtYCjeNN8qPcxzkogDkf5pziMgKzYqZhjsEbEW9gzqG52zPVfrCamG8xtURY4skKzkxdyWamr2\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"4a1ad96262a39f4514f71dc3975e8d6201dbefdb688590854b8ed4e4790cabca\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"000033245b7c7b328a49ab9bcd4d9b412bfaba2fbf7fe4e4ecdeae24e2f16b2d\\",
+  \\"block_num\\": 13092,
+  \\"ref_block_prefix\\": 2611693962
+}",
+            ],
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <UNDEFINED>
+            <div>
+              <h1
+                className="text-white"
+              >
+                Recent EOS Blocks
+              </h1>
+            </div>
+            <Button
+              className="blockListBtns"
+              node="button"
+              onClick={[Function]}
+            >
+              Load Last Ten
+            </Button>
+          </UNDEFINED>,
+          null,
+          <BlockListStream
+            recentBlocks={
+              Object {
+                "13083": Array [
+                  "{
+  \\"previous\\": \\"0000331a9bb24d928eff23c0edbe13a503248b15f49f0d3c2f599af631165144\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:12.500\\",
+  \\"transaction_mroot\\": \\"5fd0f9cc2bf6f303bfa7001179dc699fb706f4e8c12faa6b8b431e688de2d3b3\\",
+  \\"action_mroot\\": \\"b175559d1f90194cf66c3fcfedbe07bf2e2c3cb9fd3cbebb923b28dbd78471cd\\",
+  \\"block_mroot\\": \\"2030c5903436f0f15c16522dae7ec6924bdf966520290c041a82fc39dac75ead\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKfKyiywigw3mrHGskSw9e6LWkArC2FxBivbHoeiW75Ddd5dgjQVfQ174bULwSsscKSLdEDDjjawBuRCC37RzX4VqoYhM15\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"93e2dac43d33d060dc50ca6408efd1f288e14d0e4debdca7ca85329bda85175c\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000331bf8c63ea7cea3621b135617e19c434eb642e1e8b129d178c9c10e6359\\",
+  \\"block_num\\": 13083,
+  \\"ref_block_prefix\\": 459449294
+}",
+                ],
+                "13084": Array [
+                  "{
+  \\"previous\\": \\"0000331bf8c63ea7cea3621b135617e19c434eb642e1e8b129d178c9c10e6359\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:13.000\\",
+  \\"transaction_mroot\\": \\"a6a36c7f13da10e2f4e2f1c5172c9c0aac7a1002255c531e1eafab675df0c2c4\\",
+  \\"action_mroot\\": \\"f74d72952f538ee5d1da6f11da297adc9bd024c2d42f6abb87f061ca29b20516\\",
+  \\"block_mroot\\": \\"536c27e0bc030587ec639be97cd7de0de7c75c4ee4c31ab3f62c5f1b21fbe885\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKjaJH1Dr32kANKuNYKZbF7NqGuhhKjebyzy1u25WNRVbJMKkGDQaZL1Wyz2e575EabQLyjUoFbYbgHtBXThNUMc8gx8uwr\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"2a177b867e3b4c286851e698975c41c33f6262cd9c309441590dbf017709b23c\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000331c56fe87a32b1c6fea30b1b7091090db33cc9a4d4d6bd0421f8902a14d\\",
+  \\"block_num\\": 13084,
+  \\"ref_block_prefix\\": 3933150251
+}",
+                ],
+                "13085": Array [
+                  "{
+  \\"previous\\": \\"0000331c56fe87a32b1c6fea30b1b7091090db33cc9a4d4d6bd0421f8902a14d\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:13.500\\",
+  \\"transaction_mroot\\": \\"28562ac2f3a713a9957866d72d4d8dfdb1fb9823f2705a61759f7d284acf32b2\\",
+  \\"action_mroot\\": \\"c22de8473b8e1ade3def896d7d62edff517909de4faad9ecc20cda1c75926b35\\",
+  \\"block_mroot\\": \\"1bb86e086490876f46c00b0917b745a0210d89a60edc1cdf5986836f5662af4b\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKXJAfJArhWRMzmo9srKSzt8QeAzXKkadXEYTcJkENUwje3PVGj4RyoKatJWxPcQiNgks4py2gPwptMh6uA3XN4NxY94j5U\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"249e3d00ea1c8683d8b0b3eddc418c02b83163ac7cb357ee1f259a54f71b6562\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000331d2df849d09f0ca0b5074e0f1bc7b57835634250b9a116d1349044d05c\\",
+  \\"block_num\\": 13085,
+  \\"ref_block_prefix\\": 3047165087
+}",
+                ],
+                "13086": Array [
+                  "{
+  \\"previous\\": \\"0000331d2df849d09f0ca0b5074e0f1bc7b57835634250b9a116d1349044d05c\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:14.000\\",
+  \\"transaction_mroot\\": \\"33fa8d5acaea05fb1e5281c8ad483f55270c1fa0b1676093e7488875e0247999\\",
+  \\"action_mroot\\": \\"937f4f8bdfb87f2a981dd61de4649d99fdf952382600e6fe41e87a0c5c8bfc5f\\",
+  \\"block_mroot\\": \\"e085b9c913556bd87b30bcb161f03edba8cd200be0021906c38680e43062712f\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSK2qPbwLdaQ7N1HKVZXTePgmandFt1zbabQegQ9Z6gNprmQmyXX3zvJdh4dceryhufTkyw1TXV9YTiJZnZKRvGriBCAdrfN\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"746e8d15bd76fe0c38cd3c0f06e84420afb619b6c164a56bb122730ae37dd007\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000331efcd3bc6c437d702f05e3fb2d1fcae0713a36decb99574d9e7c4d3886\\",
+  \\"block_num\\": 13086,
+  \\"ref_block_prefix\\": 795901251
+}",
+                ],
+                "13087": Array [
+                  "{
+  \\"previous\\": \\"0000331efcd3bc6c437d702f05e3fb2d1fcae0713a36decb99574d9e7c4d3886\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:14.500\\",
+  \\"transaction_mroot\\": \\"bb86367709880ac8749d0d18f4cb00b5695bf2f876ff71f72e85d951ce7f89ef\\",
+  \\"action_mroot\\": \\"ec42905a23b445eea9f00982776be1ee74b8a1a23d8f251ec276cb1053bc4714\\",
+  \\"block_mroot\\": \\"2074fefa9a0340eca9d4c498ed7bba744dcb26f7cdfe0396de6db21e66fd1120\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSK6FT23s21vUXKHT6WSySYhJmTtVQRFqw8ZKHvtp8Df5wyGZqKqHfV6jMWmpsyA8Za1zBwTk8abW49aoA2u2GhVCGmHZbjN\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"039740170799fac8e98b7bdb721c1eef876c68c0703566df8c0d6ec68d42dcd3\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000331fc0f2cf2ef211e4fbb1d1e1e733d738de34ee91dbc369fd7f37615214\\",
+  \\"block_num\\": 13087,
+  \\"ref_block_prefix\\": 4226028018
+}",
+                ],
+                "13088": Array [
+                  "{
+  \\"previous\\": \\"0000331fc0f2cf2ef211e4fbb1d1e1e733d738de34ee91dbc369fd7f37615214\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:15.000\\",
+  \\"transaction_mroot\\": \\"6925696709d5d1ac594b69b9b1f239507e2d6edad5bb7f93dfd8194f033bda1a\\",
+  \\"action_mroot\\": \\"f8c6b2c5d58d128a665e21beae0c5d55cf5d3363ae54cfc617078d3055c93278\\",
+  \\"block_mroot\\": \\"b8993ddb359d2b1ed42855ac3733b0c0ad7024839088732e4e684345079e9983\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSJyiJkAMZ277ejRTD4TiwxiZ5kLNKfeSxnVYoRotNnFAXFMzRobdokPWzN99rWFG6WtwGu5ZGMx3yy9736DGeanHqoQzMtm\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"d405aff838a4185823e2ad8a2c169e3a776057e6de4482b28bed3cbdb08398bc\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"00003320c5c0496b5d2a2a1f87ce1daf66bb531d58a1b6c545c97cfebd88609c\\",
+  \\"block_num\\": 13088,
+  \\"ref_block_prefix\\": 522857053
+}",
+                ],
+                "13089": Array [
+                  "{
+  \\"previous\\": \\"00003320c5c0496b5d2a2a1f87ce1daf66bb531d58a1b6c545c97cfebd88609c\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:15.500\\",
+  \\"transaction_mroot\\": \\"0c3d0844adbbb7067e6c0d15b588ae649f4eac6e5a4f8991462a2dd0bde18a98\\",
+  \\"action_mroot\\": \\"5840d2726a9b5f611b2956e104cd99f8e73441233cea1a97013340ffda6871ec\\",
+  \\"block_mroot\\": \\"1e63e6741f19de0501b703918deedadd596b21eb4f25e66f8a485f20b673a188\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKdvw4hpN46AujwM7YGb55FHopzFG1qU23KnA7ZZ9YgMi3TTizRKRuguD4KAEd7maXvgbPrTnuMnkVC4F4wcUEL5FkqcDwq\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"05a50de5a368b41a4037aa93b7e4e385139e6e65ceec4ff17276b66ed88eb664\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"000033216c84108bf009bd41869870733bc71af852daac02ba911f56df06cd4d\\",
+  \\"block_num\\": 13089,
+  \\"ref_block_prefix\\": 1102907888
+}",
+                ],
+                "13090": Array [
+                  "{
+  \\"previous\\": \\"000033216c84108bf009bd41869870733bc71af852daac02ba911f56df06cd4d\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:16.000\\",
+  \\"transaction_mroot\\": \\"16c4dde6468f46674e3ba1d525656e768788ef946dad527bad832445d4c9fb15\\",
+  \\"action_mroot\\": \\"32e35387b1069dc06da0f193ab5c5dd95c49a613413e1413f8aec21da445449a\\",
+  \\"block_mroot\\": \\"db6bad37260e2c6da2e71362f78aeffccadb220bc75d7175e58778f958145320\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKjqg6KqTXLFE199bR8M9Hci1o3fQU7fBmGJXopfT5VYELQurPXNjyoquzWGcCCfooqRycPjytbqu6LR4uRJZnMk8c7Wnem\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"8fc3b169f26e56192c3085b0561f2303e8db0ab323dcce7e0fbfc0a202d75fc5\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000332267affa72638f0cbd58c0088d34ea42d70e6ce5122868ae92e9d19721\\",
+  \\"block_num\\": 13090,
+  \\"ref_block_prefix\\": 3171716963
+}",
+                ],
+                "13091": Array [
+                  "{
+  \\"previous\\": \\"0000332267affa72638f0cbd58c0088d34ea42d70e6ce5122868ae92e9d19721\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:16.500\\",
+  \\"transaction_mroot\\": \\"6831a3cb4fbe8e8ca99b1d426a266baf74ef5d16fd034fccb58d2060bbaa1623\\",
+  \\"action_mroot\\": \\"d910cb234b21cd8c299e859a3aef5449cfa50d38403d42a356b1dee87b499b2c\\",
+  \\"block_mroot\\": \\"e33474310fa00efc4c22e9c5ef9985e77153e02a622725308ac0c0cbaac5fa3b\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKfXdyhBcGMKgDXkuhwEZQCcS1R7C63BAjPMhKinZtPbe129PVYA3Gd6EmS9a6v53RCfRcem2a8WvfekDjCoRYnfmu982Si\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"7263ff3833dfed31caee6eef836c053180cd7d74579d8e7a6e3a9b515216bcbd\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"000033238bf95234b1ccce38ed87ef4cab3a1c7e4c47f7ec728663e134d09918\\",
+  \\"block_num\\": 13091,
+  \\"ref_block_prefix\\": 953076913
+}",
+                ],
+                "13092": Array [
+                  "{
+  \\"previous\\": \\"000033238bf95234b1ccce38ed87ef4cab3a1c7e4c47f7ec728663e134d09918\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:17.000\\",
+  \\"transaction_mroot\\": \\"c5e924f9f28333bfd728392224c80648cc8fbcdeaa89d644cc52c4945033a1ec\\",
+  \\"action_mroot\\": \\"02126313f88643dda62a7afa4a4330fa32e0aaa9d21360e1b52fbbf73cc35ec7\\",
+  \\"block_mroot\\": \\"a840c06523e7921e0292ef3c90a0129bdebc2459175a2fcccf4794b53532befd\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSK5F3p7qd44KdqDwJWdiHLtYCjeNN8qPcxzkogDkf5pziMgKzYqZhjsEbEW9gzqG52zPVfrCamG8xtURY4skKzkxdyWamr2\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"4a1ad96262a39f4514f71dc3975e8d6201dbefdb688590854b8ed4e4790cabca\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"000033245b7c7b328a49ab9bcd4d9b412bfaba2fbf7fe4e4ecdeae24e2f16b2d\\",
+  \\"block_num\\": 13092,
+  \\"ref_block_prefix\\": 2611693962
+}",
+                ],
+              }
+            }
+          />,
+        ],
+        "className": "App",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <div>
+                <h1
+                  className="text-white"
+                >
+                  Recent EOS Blocks
+                </h1>
+              </div>,
+              <Button
+                className="blockListBtns"
+                node="button"
+                onClick={[Function]}
+              >
+                Load Last Ten
+              </Button>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <h1
+                  className="text-white"
+                >
+                  Recent EOS Blocks
+                </h1>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Recent EOS Blocks",
+                  "className": "text-white",
+                },
+                "ref": null,
+                "rendered": "Recent EOS Blocks",
+                "type": "h1",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Load Last Ten",
+                "className": "blockListBtns",
+                "node": "button",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Load Last Ten",
+              "type": [Function],
+            },
+          ],
+          "type": Symbol(react.fragment),
+        },
+        null,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "recentBlocks": Object {
+              "13083": Array [
+                "{
+  \\"previous\\": \\"0000331a9bb24d928eff23c0edbe13a503248b15f49f0d3c2f599af631165144\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:12.500\\",
+  \\"transaction_mroot\\": \\"5fd0f9cc2bf6f303bfa7001179dc699fb706f4e8c12faa6b8b431e688de2d3b3\\",
+  \\"action_mroot\\": \\"b175559d1f90194cf66c3fcfedbe07bf2e2c3cb9fd3cbebb923b28dbd78471cd\\",
+  \\"block_mroot\\": \\"2030c5903436f0f15c16522dae7ec6924bdf966520290c041a82fc39dac75ead\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKfKyiywigw3mrHGskSw9e6LWkArC2FxBivbHoeiW75Ddd5dgjQVfQ174bULwSsscKSLdEDDjjawBuRCC37RzX4VqoYhM15\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"93e2dac43d33d060dc50ca6408efd1f288e14d0e4debdca7ca85329bda85175c\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000331bf8c63ea7cea3621b135617e19c434eb642e1e8b129d178c9c10e6359\\",
+  \\"block_num\\": 13083,
+  \\"ref_block_prefix\\": 459449294
+}",
+              ],
+              "13084": Array [
+                "{
+  \\"previous\\": \\"0000331bf8c63ea7cea3621b135617e19c434eb642e1e8b129d178c9c10e6359\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:13.000\\",
+  \\"transaction_mroot\\": \\"a6a36c7f13da10e2f4e2f1c5172c9c0aac7a1002255c531e1eafab675df0c2c4\\",
+  \\"action_mroot\\": \\"f74d72952f538ee5d1da6f11da297adc9bd024c2d42f6abb87f061ca29b20516\\",
+  \\"block_mroot\\": \\"536c27e0bc030587ec639be97cd7de0de7c75c4ee4c31ab3f62c5f1b21fbe885\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKjaJH1Dr32kANKuNYKZbF7NqGuhhKjebyzy1u25WNRVbJMKkGDQaZL1Wyz2e575EabQLyjUoFbYbgHtBXThNUMc8gx8uwr\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"2a177b867e3b4c286851e698975c41c33f6262cd9c309441590dbf017709b23c\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000331c56fe87a32b1c6fea30b1b7091090db33cc9a4d4d6bd0421f8902a14d\\",
+  \\"block_num\\": 13084,
+  \\"ref_block_prefix\\": 3933150251
+}",
+              ],
+              "13085": Array [
+                "{
+  \\"previous\\": \\"0000331c56fe87a32b1c6fea30b1b7091090db33cc9a4d4d6bd0421f8902a14d\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:13.500\\",
+  \\"transaction_mroot\\": \\"28562ac2f3a713a9957866d72d4d8dfdb1fb9823f2705a61759f7d284acf32b2\\",
+  \\"action_mroot\\": \\"c22de8473b8e1ade3def896d7d62edff517909de4faad9ecc20cda1c75926b35\\",
+  \\"block_mroot\\": \\"1bb86e086490876f46c00b0917b745a0210d89a60edc1cdf5986836f5662af4b\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKXJAfJArhWRMzmo9srKSzt8QeAzXKkadXEYTcJkENUwje3PVGj4RyoKatJWxPcQiNgks4py2gPwptMh6uA3XN4NxY94j5U\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"249e3d00ea1c8683d8b0b3eddc418c02b83163ac7cb357ee1f259a54f71b6562\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000331d2df849d09f0ca0b5074e0f1bc7b57835634250b9a116d1349044d05c\\",
+  \\"block_num\\": 13085,
+  \\"ref_block_prefix\\": 3047165087
+}",
+              ],
+              "13086": Array [
+                "{
+  \\"previous\\": \\"0000331d2df849d09f0ca0b5074e0f1bc7b57835634250b9a116d1349044d05c\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:14.000\\",
+  \\"transaction_mroot\\": \\"33fa8d5acaea05fb1e5281c8ad483f55270c1fa0b1676093e7488875e0247999\\",
+  \\"action_mroot\\": \\"937f4f8bdfb87f2a981dd61de4649d99fdf952382600e6fe41e87a0c5c8bfc5f\\",
+  \\"block_mroot\\": \\"e085b9c913556bd87b30bcb161f03edba8cd200be0021906c38680e43062712f\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSK2qPbwLdaQ7N1HKVZXTePgmandFt1zbabQegQ9Z6gNprmQmyXX3zvJdh4dceryhufTkyw1TXV9YTiJZnZKRvGriBCAdrfN\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"746e8d15bd76fe0c38cd3c0f06e84420afb619b6c164a56bb122730ae37dd007\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000331efcd3bc6c437d702f05e3fb2d1fcae0713a36decb99574d9e7c4d3886\\",
+  \\"block_num\\": 13086,
+  \\"ref_block_prefix\\": 795901251
+}",
+              ],
+              "13087": Array [
+                "{
+  \\"previous\\": \\"0000331efcd3bc6c437d702f05e3fb2d1fcae0713a36decb99574d9e7c4d3886\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:14.500\\",
+  \\"transaction_mroot\\": \\"bb86367709880ac8749d0d18f4cb00b5695bf2f876ff71f72e85d951ce7f89ef\\",
+  \\"action_mroot\\": \\"ec42905a23b445eea9f00982776be1ee74b8a1a23d8f251ec276cb1053bc4714\\",
+  \\"block_mroot\\": \\"2074fefa9a0340eca9d4c498ed7bba744dcb26f7cdfe0396de6db21e66fd1120\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSK6FT23s21vUXKHT6WSySYhJmTtVQRFqw8ZKHvtp8Df5wyGZqKqHfV6jMWmpsyA8Za1zBwTk8abW49aoA2u2GhVCGmHZbjN\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"039740170799fac8e98b7bdb721c1eef876c68c0703566df8c0d6ec68d42dcd3\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000331fc0f2cf2ef211e4fbb1d1e1e733d738de34ee91dbc369fd7f37615214\\",
+  \\"block_num\\": 13087,
+  \\"ref_block_prefix\\": 4226028018
+}",
+              ],
+              "13088": Array [
+                "{
+  \\"previous\\": \\"0000331fc0f2cf2ef211e4fbb1d1e1e733d738de34ee91dbc369fd7f37615214\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:15.000\\",
+  \\"transaction_mroot\\": \\"6925696709d5d1ac594b69b9b1f239507e2d6edad5bb7f93dfd8194f033bda1a\\",
+  \\"action_mroot\\": \\"f8c6b2c5d58d128a665e21beae0c5d55cf5d3363ae54cfc617078d3055c93278\\",
+  \\"block_mroot\\": \\"b8993ddb359d2b1ed42855ac3733b0c0ad7024839088732e4e684345079e9983\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSJyiJkAMZ277ejRTD4TiwxiZ5kLNKfeSxnVYoRotNnFAXFMzRobdokPWzN99rWFG6WtwGu5ZGMx3yy9736DGeanHqoQzMtm\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"d405aff838a4185823e2ad8a2c169e3a776057e6de4482b28bed3cbdb08398bc\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"00003320c5c0496b5d2a2a1f87ce1daf66bb531d58a1b6c545c97cfebd88609c\\",
+  \\"block_num\\": 13088,
+  \\"ref_block_prefix\\": 522857053
+}",
+              ],
+              "13089": Array [
+                "{
+  \\"previous\\": \\"00003320c5c0496b5d2a2a1f87ce1daf66bb531d58a1b6c545c97cfebd88609c\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:15.500\\",
+  \\"transaction_mroot\\": \\"0c3d0844adbbb7067e6c0d15b588ae649f4eac6e5a4f8991462a2dd0bde18a98\\",
+  \\"action_mroot\\": \\"5840d2726a9b5f611b2956e104cd99f8e73441233cea1a97013340ffda6871ec\\",
+  \\"block_mroot\\": \\"1e63e6741f19de0501b703918deedadd596b21eb4f25e66f8a485f20b673a188\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKdvw4hpN46AujwM7YGb55FHopzFG1qU23KnA7ZZ9YgMi3TTizRKRuguD4KAEd7maXvgbPrTnuMnkVC4F4wcUEL5FkqcDwq\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"05a50de5a368b41a4037aa93b7e4e385139e6e65ceec4ff17276b66ed88eb664\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"000033216c84108bf009bd41869870733bc71af852daac02ba911f56df06cd4d\\",
+  \\"block_num\\": 13089,
+  \\"ref_block_prefix\\": 1102907888
+}",
+              ],
+              "13090": Array [
+                "{
+  \\"previous\\": \\"000033216c84108bf009bd41869870733bc71af852daac02ba911f56df06cd4d\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:16.000\\",
+  \\"transaction_mroot\\": \\"16c4dde6468f46674e3ba1d525656e768788ef946dad527bad832445d4c9fb15\\",
+  \\"action_mroot\\": \\"32e35387b1069dc06da0f193ab5c5dd95c49a613413e1413f8aec21da445449a\\",
+  \\"block_mroot\\": \\"db6bad37260e2c6da2e71362f78aeffccadb220bc75d7175e58778f958145320\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKjqg6KqTXLFE199bR8M9Hci1o3fQU7fBmGJXopfT5VYELQurPXNjyoquzWGcCCfooqRycPjytbqu6LR4uRJZnMk8c7Wnem\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"8fc3b169f26e56192c3085b0561f2303e8db0ab323dcce7e0fbfc0a202d75fc5\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"0000332267affa72638f0cbd58c0088d34ea42d70e6ce5122868ae92e9d19721\\",
+  \\"block_num\\": 13090,
+  \\"ref_block_prefix\\": 3171716963
+}",
+              ],
+              "13091": Array [
+                "{
+  \\"previous\\": \\"0000332267affa72638f0cbd58c0088d34ea42d70e6ce5122868ae92e9d19721\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:16.500\\",
+  \\"transaction_mroot\\": \\"6831a3cb4fbe8e8ca99b1d426a266baf74ef5d16fd034fccb58d2060bbaa1623\\",
+  \\"action_mroot\\": \\"d910cb234b21cd8c299e859a3aef5449cfa50d38403d42a356b1dee87b499b2c\\",
+  \\"block_mroot\\": \\"e33474310fa00efc4c22e9c5ef9985e77153e02a622725308ac0c0cbaac5fa3b\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSKfXdyhBcGMKgDXkuhwEZQCcS1R7C63BAjPMhKinZtPbe129PVYA3Gd6EmS9a6v53RCfRcem2a8WvfekDjCoRYnfmu982Si\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"7263ff3833dfed31caee6eef836c053180cd7d74579d8e7a6e3a9b515216bcbd\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"000033238bf95234b1ccce38ed87ef4cab3a1c7e4c47f7ec728663e134d09918\\",
+  \\"block_num\\": 13091,
+  \\"ref_block_prefix\\": 953076913
+}",
+              ],
+              "13092": Array [
+                "{
+  \\"previous\\": \\"000033238bf95234b1ccce38ed87ef4cab3a1c7e4c47f7ec728663e134d09918\\",
+  \\"timestamp\\": \\"2018-04-25T19:54:17.000\\",
+  \\"transaction_mroot\\": \\"c5e924f9f28333bfd728392224c80648cc8fbcdeaa89d644cc52c4945033a1ec\\",
+  \\"action_mroot\\": \\"02126313f88643dda62a7afa4a4330fa32e0aaa9d21360e1b52fbbf73cc35ec7\\",
+  \\"block_mroot\\": \\"a840c06523e7921e0292ef3c90a0129bdebc2459175a2fcccf4794b53532befd\\",
+  \\"producer\\": \\"eosio\\",
+  \\"schedule_version\\": 0,
+  \\"new_producers\\": null,
+  \\"producer_signature\\": \\"EOSK5F3p7qd44KdqDwJWdiHLtYCjeNN8qPcxzkogDkf5pziMgKzYqZhjsEbEW9gzqG52zPVfrCamG8xtURY4skKzkxdyWamr2\\",
+  \\"regions\\": [
+    {
+      \\"region\\": 0,
+      \\"cycles_summary\\": [
+        [
+          {
+            \\"read_locks\\": [],
+            \\"write_locks\\": [],
+            \\"transactions\\": [
+              {
+                \\"status\\": \\"executed\\",
+                \\"kcpu_usage\\": 2,
+                \\"net_usage_words\\": 38,
+                \\"id\\": \\"4a1ad96262a39f4514f71dc3975e8d6201dbefdb688590854b8ed4e4790cabca\\"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  \\"input_transactions\\": [],
+  \\"id\\": \\"000033245b7c7b328a49ab9bcd4d9b412bfaba2fbf7fe4e4ecdeae24e2f16b2d\\",
+  \\"block_num\\": 13092,
+  \\"ref_block_prefix\\": 2611693962
+}",
+              ],
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`BlockListStream when displayLastTen is true tests to see if the AppComponent is rendering the RecentBlocks Component 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <UNDEFINED>
+          <div>
+            <h1
+              className="text-white"
+            >
+              Recent EOS Blocks
+            </h1>
+          </div>
+          <Button
+            className="blockListBtns"
+            node="button"
+            onClick={[Function]}
+          >
+            Live list of Blocks
+          </Button>
+        </UNDEFINED>,
+        <Apollo(RecentBlocksList) />,
+        null,
+      ],
+      "className": "App",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <div>
+              <h1
+                className="text-white"
+              >
+                Recent EOS Blocks
+              </h1>
+            </div>,
+            <Button
+              className="blockListBtns"
+              node="button"
+              onClick={[Function]}
+            >
+              Live list of Blocks
+            </Button>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <h1
+                className="text-white"
+              >
+                Recent EOS Blocks
+              </h1>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Recent EOS Blocks",
+                "className": "text-white",
+              },
+              "ref": null,
+              "rendered": "Recent EOS Blocks",
+              "type": "h1",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Live list of Blocks",
+              "className": "blockListBtns",
+              "node": "button",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Live list of Blocks",
+            "type": [Function],
+          },
+        ],
+        "type": Symbol(react.fragment),
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      null,
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <UNDEFINED>
+            <div>
+              <h1
+                className="text-white"
+              >
+                Recent EOS Blocks
+              </h1>
+            </div>
+            <Button
+              className="blockListBtns"
+              node="button"
+              onClick={[Function]}
+            >
+              Live list of Blocks
+            </Button>
+          </UNDEFINED>,
+          <Apollo(RecentBlocksList) />,
+          null,
+        ],
+        "className": "App",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <div>
+                <h1
+                  className="text-white"
+                >
+                  Recent EOS Blocks
+                </h1>
+              </div>,
+              <Button
+                className="blockListBtns"
+                node="button"
+                onClick={[Function]}
+              >
+                Live list of Blocks
+              </Button>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <h1
+                  className="text-white"
+                >
+                  Recent EOS Blocks
+                </h1>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Recent EOS Blocks",
+                  "className": "text-white",
+                },
+                "ref": null,
+                "rendered": "Recent EOS Blocks",
+                "type": "h1",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Live list of Blocks",
+                "className": "blockListBtns",
+                "node": "button",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Live list of Blocks",
+              "type": [Function],
+            },
+          ],
+          "type": Symbol(react.fragment),
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        null,
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
