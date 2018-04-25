@@ -25,9 +25,21 @@
     "subscriptions-transport-ws": "^0.9.8"
   },
   "scripts": {
+    "startIO": "node index.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "test": "jest",
+    "eject": "react-scripts eject",
+    "update-snapshots": "jest --updateSnapshot"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3",
+    "jest": "^22.4.3",
+    "jest-cli": "^22.4.3",
+    "react-test-renderer": "^16.3.2",
+    "unfetch": "^3.0.0"
   }
 }

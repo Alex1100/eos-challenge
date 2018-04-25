@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import BlockListStream from './BlockListStream';
-import RecentBlocksList from './tenRecentBlocks';
+import RecentBlocksList from './RecentBlocksList';
 import openSocket from 'socket.io-client';
 import { Button } from 'react-materialize';
 import './App.css';
@@ -49,7 +49,6 @@ class App extends Component {
       }
 
       this.setState({
-        connected: true,
         recentBlocks: freshlyMintedBlocks
       });
     });

@@ -15,7 +15,7 @@ const BlockListStream = (props) => {
               <p><span className="text-white">{parsedBlock.timestamp}</span></p>
               <p><span className="text-gold">Input Transactions</span></p>
               <p><span className="text-white">{parsedBlock.input_transactions.length ? parsedBlock.input_transactions.length : 0}</span></p>
-          </div>
+            </div>
           </div>
         )
       })
