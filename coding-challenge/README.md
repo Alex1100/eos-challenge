@@ -1,6 +1,8 @@
 ## EOSIO CODING CHALLENGE
 
-![EOSIO]("https://eos.io/static/media/eos_logo_tm.e03b85cd.svg")
+<img 
+  src="https://eos.io/static/media/eos_logo_tm.e03b85cd.svg" style="width: 100px; height: 100px" 
+/>
 
 # React Application to pull the most recent blocks
 
