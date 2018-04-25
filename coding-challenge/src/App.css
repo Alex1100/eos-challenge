@@ -14,6 +14,61 @@
   color: white;
 }
 
+.text-wrap {
+  overflow-wrap: break-word;
+}
+
+.refreshRecentBlocks {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: black;
+  color: gold;
+}
+
+.refreshRecentBlocks:hover {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: gold;
+  color: black;
+}
+
+.refreshRecentBlocks:click {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: black;
+  color: gold;
+}
+
+.blockContents {
+  margin: 0 auto;
+  text-center: middle;
+  font-size: 90%;
+}
+
+.liveStreamBlock {
+  background-color: black;
+  margin: 0 auto;
+  width: 75%;
+  height: 230px;
+  border: solid 2px ghostwhite;
+  border-radius: 4px;
+  margin-bottom: 20px
+}
+
+.blockListBtns {
+  color: white;
+  background-color: gold;
+  margin-bottom: 15px;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-gold {
+  color: gold;
+}
+
 .App-title {
   font-size: 1.5em;
 }

@@ -1,128 +1,29 @@
 const Eos = require('eosjs');
-// const io = require('socket.io')();
 const express = require('express');
 const app = express();
-const bodyParser = require('body-parser');
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 const expressGraphql = require('express-graphql');
-const { graphqlExpress, graphiqlExpress } = require('apollo-server-express');
-const { SubscriptionServer } = require('subscriptions-transport-ws');
-
-
-const { PubSub } = require('graphql-subscriptions');
-const pubsub = new PubSub();
-const { addMockFunctionsToSchema, makeExecutableSchema } = require('graphql-tools');
-
-const {
-  buildSchema,
-  execute,
-  subscribe
-} = require('graphql');
-
+const { makeExecutableSchema } = require('graphql-tools');
 const cors = require('cors')
-const GRAPHQL_PORT = 5000;
-const port = 5000;
-eos = Eos.Localnet({keyProvider: process.env.eos_private_key});
+const PORT = 5000;
+const Schema = require('./graphql-config/schema');
+
+eos = Eos.Localnet();
 let lastTenBlocks = {};
 let result = '';
 
 
-const BLOCK_ADDED = 'blockAdded';
-
 const Resolvers = {
-  Mutation: {
-    addBlock: async () => {
-      pubsub.publish(BLOCK_ADDED, { blockAdded: result });
-      return result
-    }
-  },
-  Subscription: {
-    blockAdded: {
-      subscribe: () => pubsub.asyncIterator(BLOCK_ADDED)
+  Query: {
+    getLastTenBlocks: async () => {
+      return result;
+    },
+    blocks: async () => {
+      return result;
     }
   }
-}
-
-
-const rootValue = {
-  blocks: () => {
-    return result
-  }
-}
-
-
-// GraphQL Schema
-// const Schema = buildSchema(`
-//   type Mutation {
-//     blockAdded(block: Block): Block
-//   }
-
-//   type Subscription {
-//     blockAdded(block: Block!): Block
-//   }
-
-//   type Block {
-//     previous: String!,
-//     block_num: Int!,
-//     timestamp: String!,
-//     transaction_mroot: String!,
-//     action_mroot: String!,
-//     block_mroot: String!,
-//     producer: String!,
-//     schedule_version: Int!,
-//     producer_signature: String!,
-//     input_transactions: Int!,
-//     error: String!
-//   }
-
-//   type Query {
-//     getLastTenBlocks: [Block!],
-//     blocks: [Block!]
-//   }
-
-//   type schema {
-//     query: Query,
-//     mutation: Mutation,
-//     subscription: Subscription
-//   }
-// `);
-
-
-const Schema = `
-  type Mutation {
-    addBlock: [Block!]
-  }
-
-  type Subscription {
-    blockAdded: [Block!]
-  }
-
-  type Block {
-    previous: String!,
-    block_num: Int!,
-    timestamp: String!,
-    transaction_mroot: String!,
-    action_mroot: String!,
-    block_mroot: String!,
-    producer: String!,
-    schedule_version: Int!,
-    producer_signature: String!,
-    input_transactions: Int!,
-    error: String!
-  }
-
-  type Query {
-    getLastTenBlocks: [Block!],
-    blocks: [Block!]
-  }
-
-  type schema {
-    query: Query,
-    mutation: Mutation,
-    subscription: Subscription
-  }
-`;
+};
 
 
 const executableSchema = makeExecutableSchema({
@@ -130,52 +31,10 @@ const executableSchema = makeExecutableSchema({
   resolvers: Resolvers,
 });
 
-//Regions type
-/*
-  type CycleTransaction {
-    status: String!,
-    kcpu_usage: Int!,
-    net_usage_words: Int!,
-    id: String!
-  }
-
-  type Cycles {
-    read_locks: [],
-    write_locks: [],
-    transactions: [[CycleTransaction!]]!
-  }
-
-  type Regions {
-    region: Int!,
-    cycles_summary: [[Cycles!]]!
-  }
-*/
-
-/*
-  type CycleTransaction {
-    status: String!,
-    kcpu_usage: Int!,
-    net_usage_words: Int!,
-    id: String!
-  }
-
-  type Cycles {
-    read_locks: [],
-    write_locks: [],
-    transactions: [CycleTransaction]
-  }
-
-  type Regions {
-    region: Int!,
-    cycles_summary: [[Cycles!]]
-  }
-*/
 
 const sendTenBlocks = (blocks) => {
   return Object.values(blocks).map(block => {
     const parsedBlock = JSON.parse(block);
-    console.log("PARSED BLOCK IS: ", parsedBlock);
-    console.log("PARSED BOCK REGIONS IS: ", parsedBlock.regions[0].cycles_summary[0][0].transactions);
 
     return {
       previous: parsedBlock.previous,
@@ -194,42 +53,26 @@ const sendTenBlocks = (blocks) => {
   })
 };
 
-app.use(cors());
 
-console.log("EXEC SCHEMA IS: ", executableSchema);
+app.use(cors());
 
 app.use('/graphql', expressGraphql({
   schema: executableSchema,
-  rootValue,
-  graphiql: true,
-  subscriptionsEndpoint: `http://localhost:${port}/subscriptions`
+  rootValue: {
+    defaultBlocks: () => {
+      return result;
+    }
+  },
+  graphiql: true
 }));
 
 
-// app.use('/graphql', bodyParser.json(), graphqlExpress({
-//   schema: executableSchema,}))
-
-
-server.listen(port, () => {
-  console.log("EXPRESS LISTENING ON PORT: ", port);
-  console.log("WEBSOCKETS LISTENING ON PORT: ", port);
-  console.log('should hit ws');
-
-  new SubscriptionServer({
-    execute,
-    subscribe,
-    schema: executableSchema
-  }, {
-    server: io,
-    path: '/subscriptions'
-  });
-
+server.listen(PORT, () => {
   io.on('connection', (client) => {
     client.on('subscribeToEosBlockMessages', (interval) => {
       console.log("client is subscribing to eos blockchain with interval ", interval);
 
       setInterval(() => {
-        result = [];
         eos.getInfo({}).then(block => {
 
           const lastBlock = block.last_irreversible_block_num;
@@ -255,15 +98,9 @@ server.listen(port, () => {
               fin.push(lastTenBlocks[key]) :
               null;
           }
-          // if (interval.type === 'server-side') {
-          //   client.emit('getEosBlockInfoServerSide', sendTenBlocks(lastTenBlocks));
-          // }
-
-
-
 
           if (interval.type === 'client-side') {
-            client.emit('getEosBlockInfoClientSide', lastTenBlocks);
+            client.emit('getEosBlockInfoClientSide', JSON.stringify(lastTenBlocks));
           }
 
           result = sendTenBlocks(lastTenBlocks);
@@ -273,5 +110,3 @@ server.listen(port, () => {
     });
   });
 });
-
-
