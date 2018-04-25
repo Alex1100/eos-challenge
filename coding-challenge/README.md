@@ -39,7 +39,7 @@ User Story: As an EOS User I want to see a list of the most recent blocks on the
 # App is running on localhost:3000
 
 
-# When finished
+# When completed
 - make sure you run <code>docker-compose down</code>
 - to check docker instance of eosio, run <code>docker-compose ps</code>
 
