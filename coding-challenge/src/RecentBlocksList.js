@@ -33,19 +33,33 @@ export function RecentBlocksList({ data }) {
 
 const GET_TEN_RECENT_BLOCKS = gql`
   query {
-    getLastTenBlocks {
-      previous,
-      block_num,
-      timestamp,
-      transaction_mroot,
-      action_mroot,
-      block_mroot,
-      producer,
-      schedule_version,
-      input_transactions,
-      error
-    }
+  getLastTenBlocks {
+    previous,
+    block_num,
+    timestamp,
+    transaction_mroot,
+    action_mroot,
+    block_mroot,
+    producer,
+    schedule_version,
+    producer_signature,
+    input_transactions,
+    regions {
+      region,
+      cycles_summary {
+        read_locks,
+        write_locks,
+        transactions {
+          status,
+          kcpu_usage,
+          net_usage_words,
+          id
+        }
+      }
+    },
+    error
   }
+}
 `;
 
 export default graphql(GET_TEN_RECENT_BLOCKS)(RecentBlocksList);

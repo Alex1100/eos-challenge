@@ -15,8 +15,8 @@ import toJSON from 'enzyme-to-json';
 
 describe('BlockListStream', () => {
   const getLastTenBlocks = lastTenBlockProps.getLastTenBlocks;
-  const data = {getLastTenBlocks};
-  const RecentBlocksListComponent = shallow(<RecentBlocksList data={data}/>);
+  const data = { getLastTenBlocks };
+  const RecentBlocksListComponent = shallow(<RecentBlocksList data={data} />);
 
   it('tests to see that the BlockListStreamComponent is rendering a list of blocks', () => {
     expect(toJSON(RecentBlocksListComponent)).toMatchSnapshot();
