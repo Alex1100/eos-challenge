@@ -25,6 +25,7 @@
     "subscriptions-transport-ws": "^0.9.8"
   },
   "scripts": {
+    "jest-coverage": "jest --coverage",
     "startIO": "node index.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
